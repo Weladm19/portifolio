@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <!-- Aqui Usando o bot -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Aqui estou colocando o reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <header id="central">
+            <h1 id="h1Logo">Meu Portifolio</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sobre" class="link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#tecnologia" class="link">Tech</a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="link">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <img src="Logo Streamer Ousado verde Limão e Preto.png" alt="" id="logo">
+            </div>
+        </header>
+        <main id="col_main">
+            <section class="boxs" id="sobre"> 
+                <div id="txt">
+                    <h1>
+                        Sobre Tudo Que Foi Feito
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil id, odio assumenda quod dolor voluptas esse libero illo soluta numquam asperiores quo aliquid est accusantium, nam consequatur cumque voluptate. Id!
+                    </p>
+
+                </div>
+                <div id="txt_img">
+                    <img src="pexels-davi-pimentel-2064826.jpg" alt="">
+                </div>
+            </section>
+            <section class="boxs claDiv"  id="tecnologia">
+                <h3>Tecnologias</h3>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Python.svg.png" class="d-block w-100" alt="linguagem python">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="html1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="css1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="js.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="java1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="c#.png" class="d-block w-100" alt="c#">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="bootstrap-logo.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </section>
+            <section class="boxs claDiv"  id="contato">
+                <h2>Me Chame Para Conversar</h2>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4 position-relative">
+                      <label for="validationTooltip01" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="validationTooltip01" value="" placeholder="Digite Seu Nome" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                      <label for="validationTooltip02" class="form-label">Sobrenome</label>
+                      <input type="text" class="form-control" id="validationTooltip02" value="" placeholder="Seu Sobrenome" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                      <label for="validationTooltipUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" placeholder="User Insta" required>
+                        <div class="invalid-tooltip">
+                          Please choose a unique and valid username.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 position-relative">
+                      <label for="validationTooltip03" class="form-label">Cidade</label>
+                      <input type="text" class="form-control" id="validationTooltip03"
+                      placeholder="Cidade Da Empresa" required>
+                      <div class="invalid-tooltip">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                  </form>
+            </section>
+        </main>
+        <footer>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nostrum eum. Voluptatum cum aperiam reprehenderit? Laudantium soluta et unde laborum, quaerat, consequuntur voluptas suscipit repellendus deserunt hic fugiat asperiores ratione!
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nostrum eum. Voluptatum cum aperiam reprehenderit? Laudantium soluta et unde laborum, quaerat, consequuntur voluptas suscipit repellendus deserunt hic fugiat asperiores ratione!
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nostrum eum. Voluptatum cum aperiam reprehenderit? Laudantium soluta et unde laborum, quaerat, consequuntur voluptas suscipit repellendus deserunt hic fugiat asperiores ratione!
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
