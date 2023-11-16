@@ -63,11 +63,19 @@ body{
 #col_main{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: rgba(236, 222, 222, 0.281);
     height: 340vh;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+}
+
+#sobre{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
 }
 
 .boxs{
@@ -96,7 +104,7 @@ body{
 }
 
 #txt_img img{
-    width: 400px;
+    min-width: 400px;
     height: 400px;
     object-fit: cover;
     border-radius: 0px 0px 200px 200px;
