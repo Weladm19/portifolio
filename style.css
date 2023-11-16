@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +23,7 @@ body{
 
 #central{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 200px;
@@ -35,7 +37,9 @@ body{
 #central ul{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
+
 
 .link{
     display: flex;
@@ -62,7 +66,6 @@ body{
 
 #col_main{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     background-color: rgba(236, 222, 222, 0.281);
     height: 340vh;
@@ -71,15 +74,62 @@ body{
     width: 100%;
 }
 
+
+
 #sobre{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    min-width: 100%;
     height: auto;
 }
 
+@media(min-width: 300px) and (max-width:600px ){
+    #col_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+    #sobre{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #central{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+    }
+
+    #central ul{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+
+    #central ul li{
+        
+        margin: 10px 0px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer div{
+        border: 1px solid white;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 10px ;
+    }
+}
+
 .boxs{
-    height: 450px;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -110,12 +160,31 @@ body{
     border-radius: 0px 0px 200px 200px;
 }   
 
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 .claDiv{
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    padding: 10px;
+    background-color: black;
 }
 
 .carousel-item{
@@ -128,6 +197,8 @@ footer{
     justify-content: space-around;
     background-color: black;
     height: auto;
+    color: white;
+    padding: 10px;
 }
 
 footer div{
